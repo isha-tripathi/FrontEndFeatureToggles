@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  h2 Optional Features
+  p Value of feature1 toggle = #{featureToggles.getValue('feature1')}
+  p Value of feature2 toggle = #{featureToggles.getValue('feature2')}
+  p(hidden=!featureToggles.getValue('feature1')) This is shown if feature 1 is on
+  p(hidden=!featureToggles.getValue('feature2')) This is shown if feature 2 is on
+
