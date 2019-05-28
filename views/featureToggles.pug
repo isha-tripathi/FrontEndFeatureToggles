@@ -4,9 +4,9 @@ block content
     h1 Feature Toggles
     form(action="/featureToggles" method='POST')
         each feature in featureToggles.getAll()
-            div
+            div(class='table_row')
                 tr
                     td
-                        input(type='checkbox' checked=featureToggles.getValue(feature) name=`${feature}`)
+                        input(type='checkbox' checked=featureToggles.getValue(feature) name=`${feature}` class='checkbox')
                     td= feature
-        input(type='submit' value='Update')
+        input(type='submit' value='Update' class='submit')

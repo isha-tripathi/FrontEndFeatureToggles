@@ -9,4 +9,21 @@ a {
 
 .feature {
   background-color: cadetblue;
+  padding: 10px;
+}
+
+.table_row {
+  padding: 10px;
+}
+
+.checkbox {
+    margin: 0 10px 0 0;
+}
+
+.submit {
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+  border: 2px solid cadetblue;
+  background-color: cadetblue;
+  margin: 10px;
+  border-radius: 5px
 }
