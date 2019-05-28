@@ -7,6 +7,6 @@ block content
   h2 Optional Features
   p Value of feature1 toggle = #{featureToggles.getValue('feature1')}
   p Value of feature2 toggle = #{featureToggles.getValue('feature2')}
-  p(hidden=!featureToggles.getValue('feature1')) This is shown if feature 1 is on
-  p(hidden=!featureToggles.getValue('feature2')) This is shown if feature 2 is on
+  p(hidden=!featureToggles.getValue('feature1') class='feature') This is shown if feature 1 is on
+  p(hidden=!featureToggles.getValue('feature2') class='feature') This is shown if feature 2 is on
 
